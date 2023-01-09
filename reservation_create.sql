@@ -18,6 +18,7 @@ CREATE TABLE IF NOT EXISTS public.sailors
     age numeric(3,1),
     CONSTRAINT sid_pkey PRIMARY KEY (sid),
     CONSTRAINT sailors_rating_check CHECK (rating >= 1 AND rating <= 10)
+
 );
 
 -- Table: public.boats
