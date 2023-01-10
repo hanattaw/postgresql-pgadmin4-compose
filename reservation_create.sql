@@ -4,7 +4,7 @@ DROP DATABASE IF EXISTS sailor_reservation;
 
 CREATE DATABASE sailor_reservation;
 
-\connect sailor_reservation
+\connect sailor_reservation;
 
 -- Table: public.sailors
 
