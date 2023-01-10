@@ -175,7 +175,7 @@ GROUP BY S.rating
 HAVING 1 < (SELECT COUNT (*)
             FROM sailors S2
             WHERE S.rating=S2.rating)
-
+;
 
 -- (12) CREATE young sailors table
 CREATE TABLE IF NOT EXISTS public.young_sailors
