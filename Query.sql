@@ -228,3 +228,21 @@ VALUES (111, 'Dang', 1, 30.5)
 SELECT sid, sname, rating, age
 FROM young_sailors
 ;
+
+
+-- (16) Null
+INSERT INTO young_sailors (sid, sname, rating, age) 
+VALUES (111, NULL, NULL, NULL);
+
+SELECT sid, sname, rating, age
+FROM young_sailors
+;
+
+SELECT COUNT(*) 
+FROM young_sailors;
+
+SELECT COUNT(sname)
+FROM young_sailors;
+
+SELECT COUNT(sid), COUNT(sname), COUNT(rating), COUNT(age)
+FROM young_sailors;
