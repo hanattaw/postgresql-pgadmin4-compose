@@ -246,3 +246,40 @@ FROM young_sailors;
 
 SELECT COUNT(sid), COUNT(sname), COUNT(rating), COUNT(age)
 FROM young_sailors;
+
+-- (17) CROSS JOIN
+SELECT S.sid, R.bid
+FROM sailors S CROSS JOIN reserves R
+;
+
+-- (18) INNER JOIN
+SELECT S.sid, R.bid
+FROM sailors S INNER JOIN reserves R ON (S.sid=R.sid)
+;
+
+-- (19) LEFT OUTER JOIN
+SELECT S.sid, R.bid
+FROM sailors S LEFT OUTER JOIN reserves R ON (S.sid=R.sid)
+;
+
+SELECT S.sid, R.bid
+FROM sailors S LEFT JOIN reserves R ON (S.sid=R.sid)
+;
+
+-- (20) RIGHT OUTER JOIN
+SELECT S.sid, R.bid
+FROM sailors S RIGHT OUTER JOIN reserves R ON (S.sid=R.sid)
+;
+
+SELECT S.sid, R.bid
+FROM sailors S RIGHT JOIN reserves R ON (S.sid=R.sid)
+;
+
+-- (21) FULL OUTER JOIN
+SELECT S.sid, R.bid
+FROM sailors S FULL OUTER JOIN reserves R ON (S.sid=R.sid)
+;
+
+SELECT S.sid, R.bid
+FROM sailors S FULL OUTER JOIN reserves R ON (S.sid=R.sid)
+ORDER BY S.sid;
