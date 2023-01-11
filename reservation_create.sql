@@ -96,6 +96,7 @@ INSERT INTO public.reserves (sid, bid, day) VALUES (22, 103, '1998-08-10');
 INSERT INTO public.reserves (sid, bid, day) VALUES (22, 104, '1998-07-10');
 INSERT INTO public.reserves (sid, bid, day) VALUES (31, 102, '1998-10-11');
 INSERT INTO public.reserves (sid, bid, day) VALUES (31, 103, '1998-06-11');
+INSERT INTO public.reserves (sid, bid, day) VALUES (31, 104, '1998-12-11');
 INSERT INTO public.reserves (sid, bid, day) VALUES (64, 101, '1998-05-09');
 INSERT INTO public.reserves (sid, bid, day) VALUES (64, 102, '1998-08-09');
 INSERT INTO public.reserves (sid, bid, day) VALUES (74, 103, '1998-08-09');
