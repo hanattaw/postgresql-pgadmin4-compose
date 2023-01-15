@@ -4,6 +4,19 @@ SELECT S.sid
 FROM sailors S, reserves R
 WHERE S.sid=R.sid
 ;
+ sid 
+-----
+  22
+  22
+  22
+  22
+  31
+  31
+  64
+  64
+  74
+  31
+(10 rows)
 
 -- (2) Find sid’s of sailors who’ve reserved a red “or” a green boat 
 SELECT S.sid

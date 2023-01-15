@@ -64,13 +64,13 @@ CREATE TABLE IF NOT EXISTS public.reserves
 INSERT INTO public.sailors (sid, sname, rating, age) VALUES (22, 'Dustin', 7, 45.0);
 INSERT INTO public.sailors (sid, sname, rating, age) VALUES (29, 'Brutus', 1, 33.0);
 INSERT INTO public.sailors (sid, sname, rating, age) VALUES (31, 'Lubber', 8, 55.5);
+INSERT INTO public.sailors (sid, sname, rating, age) VALUES (32, 'Andy', 8, 25.5);
 INSERT INTO public.sailors (sid, sname, rating, age) VALUES (58, 'Rusty', 10, 35.0);
 INSERT INTO public.sailors (sid, sname, rating, age) VALUES (64, 'Horatio', 7, 35.0);
 INSERT INTO public.sailors (sid, sname, rating, age) VALUES (71, 'Zorba', 10, 16.0);
 INSERT INTO public.sailors (sid, sname, rating, age) VALUES (74, 'Horatio', 9, 35.0);
 INSERT INTO public.sailors (sid, sname, rating, age) VALUES (85, 'Art', 3, 25.5);
 INSERT INTO public.sailors (sid, sname, rating, age) VALUES (95, 'Bob', 3, 63.5);
-INSERT INTO public.sailors (sid, sname, rating, age) VALUES (32, 'Andy', 8, 25.5);
 
 --
 -- TOC entry 3334 (class 0 OID 16395)
