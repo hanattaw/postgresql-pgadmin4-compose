@@ -60,7 +60,7 @@ SELECT
   32 | Andy    |      8 | 25.5
 (5 rows)
 
--- Q16, Q2 Find the sids and names of sailors who has reserved a read boat.
+-- Q16, Q2 Find the sids and names of sailors who has reserved a red boat.
 SELECT
 
 ;
