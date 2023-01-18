@@ -190,6 +190,7 @@ HAVING 1 < (SELECT COUNT (*)
             WHERE S.rating=S2.rating)
 ;
 
+
 -- (12) CREATE young sailors table
 CREATE TABLE IF NOT EXISTS public.young_sailors
 (
@@ -296,3 +297,5 @@ FROM sailors S FULL OUTER JOIN reserves R ON (S.sid=R.sid)
 SELECT S.sid, R.bid
 FROM sailors S FULL OUTER JOIN reserves R ON (S.sid=R.sid)
 ORDER BY S.sid;
+
+-- add new
