@@ -13,7 +13,7 @@ This Compose file contains the following environment variables:
 * `POSTGRES_USER` the default value is **postgres**
 * `POSTGRES_PASSWORD` the default value is **changeme**
 * `PGADMIN_PORT` the default value is **5050**
-* `PGADMIN_DEFAULT_EMAIL` the default value is **pgadmin4@pgadmin.org**
+* `PGADMIN_DEFAULT_EMAIL` the default value is **pgadmin4@email.com**
 * `PGADMIN_DEFAULT_PASSWORD` the default value is **admin**
 
 ## Access to postgres: 
