@@ -1,0 +1,44 @@
+# Python bytecode:
+*.py[co]
+
+# Python Process ID:
+*.pid
+
+# Packaging files:
+*.egg*
+
+# Editor temp files:
+*.swp
+*~
+._*
+
+# Sphinx docs:
+build
+
+# SQLite3 database files:
+*.db
+
+# Logs:
+*.log
+*.log.*
+
+# Other repository
+ .svn
+ .hg*
+
+# Files unneed
+MANIFEST
+dist
+.tox
+.bak
+.log
+.bak
+.db
+.orig
+.DS_Store
+.buildozer
+
+# Pgadmin4 data folder
+pgadmin4/pgadmin
+
+postgres/data/*
