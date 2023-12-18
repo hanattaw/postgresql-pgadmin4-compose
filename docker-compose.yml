@@ -7,9 +7,9 @@ services:
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
-      PGDATA: /data/postgres
     volumes:
-       - postgres:/data/postgres
+       - ./postgres/data:/var/lib/postgresql/data
+       - ./postgres/docker-entrypoint-initdb.d/prescription_pharmacy.sql:/docker-entrypoint-initdb.d/prescription_pharmacy.sql
     ports:
       - "5432:5432"
     networks:
@@ -20,11 +20,12 @@ services:
     container_name: pgadmin_container
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@email.com}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
       PGADMIN_CONFIG_SERVER_MODE: 'False'
     volumes:
-       - pgadmin:/var/lib/pgadmin
+       - ./pgadmin4/pgadmin:/var/lib/pgadmin
+       - ./pgadmin4/servers.json:/pgadmin4/servers.json
 
     ports:
       - "${PGADMIN_PORT:-5050}:80"
@@ -36,6 +37,6 @@ networks:
   postgres:
     driver: bridge
 
-volumes:
-    postgres:
-    pgadmin:
+# volumes:
+#     postgres:
+#     pgadmin:
