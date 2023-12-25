@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-admin}
     volumes:
        - ./postgres/data:/var/lib/postgresql/data
-       - ./postgres/docker-entrypoint-initdb.d/prescription_pharmacy.sql:/docker-entrypoint-initdb.d/prescription_pharmacy.sql
+       - ./postgres/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
        - ./pgadmin4/data:/data
     ports:
       - "5432:5432"
